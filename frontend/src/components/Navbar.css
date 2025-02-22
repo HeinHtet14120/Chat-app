@@ -1,0 +1,87 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #100b0b;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #4f46e5;
+    cursor: pointer;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.nav-link {
+    padding: 0.5rem 1rem;
+    border: none;
+    background: none;
+    color: #4b5563;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+    color: #4f46e5;
+}
+
+.register-btn {
+    background-color: #4f46e5;
+    color: white;
+    border-radius: 0.375rem;
+    transition: background-color 0.2s ease;
+}
+
+.register-btn:hover {
+    background-color: #4338ca;
+    color: white;
+}
+
+.logout-btn {
+    color: #dc2626;
+}
+
+.logout-btn:hover {
+    color: #b91c1c;
+}
+
+.nav-user {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.username {
+    color: #4b5563;
+    font-weight: 500;
+}
+
+@media (max-width: 640px) {
+    .navbar {
+        padding: 1rem;
+    }
+
+    .nav-links {
+        gap: 0.5rem;
+    }
+
+    .nav-link {
+        padding: 0.5rem;
+    }
+
+    .username {
+        display: none;
+    }
+}

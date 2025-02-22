@@ -1,0 +1,243 @@
+/* Base styles */
+:root {
+    --discord-bg: #313338;
+    --discord-secondary: #2b2d31;
+    --discord-tertiary: #232428;
+    --discord-text: #f2f3f5;
+    --discord-text-muted: #b5bac1;
+    --discord-input-bg: #383a40;
+    --discord-hover: #2e3035;
+    --discord-separator: #3f4147;
+}
+
+body {
+    margin: 0;
+    font-family: 'gg sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    line-height: 1.4;
+}
+
+/* Container */
+.discord-container {
+    display: flex;
+    min-height: 95%;
+    background-color: var(--discord-bg);
+    color: var(--discord-text);
+}
+
+/* Main Chat Area */
+.chat-area {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 95vh;
+}
+
+/* Messages Container */
+.messages {
+    flex: 1;
+    overflow-y: auto;
+    padding: 0 16px;
+    width: 100%;
+    padding: 16px;
+    margin-left: 10px;
+}
+
+/* Date Divider */
+.date-divider {
+    position: relative;
+    text-align: center;
+    margin: 24px 0;
+}
+
+.date-divider::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    height: 1px;
+    background-color: var(--discord-separator);
+}
+
+.date-divider span {
+    position: relative;
+    background-color: var(--discord-bg);
+    padding: 0 8px;
+    color: var(--discord-text-muted);
+    font-size: 12px;
+}
+
+/* Messages */
+.message {
+    display: flex;
+    gap: 16px;
+    padding: 8px 0;
+    margin: 0 -16px;
+    padding: 8px 16px;
+}
+
+.message:hover {
+    background-color: var(--discord-hover);
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.message-content {
+    flex: 1;
+}
+
+.message-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.username {
+    font-weight: 500;
+}
+
+time {
+    color: var(--discord-text-muted);
+    font-size: 12px;
+}
+
+/* System Messages */
+.system-message {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--discord-text-muted);
+    font-size: 14px;
+    padding: 8px 0;
+}
+
+.system-message i {
+    font-size: 16px;
+}
+
+/* Message Input */
+.message-input {
+    width: 100%;
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    align-items: center;
+    background-color: var(--discord-bg);
+}
+
+.message-input > div {
+    display: flex;
+    align-items: center;
+    background-color: var(--discord-input-bg);
+    border-radius: 8px;
+    padding: 8px;
+}
+
+.message-input input {
+    flex: 1;
+    background: none;
+    border: none;
+    color: var(--discord-text);
+    padding: 8px;
+    font-size: 14px;
+    width: 100%;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: var(--discord-separator);
+}
+
+.message-input input::placeholder {
+    color: var(--discord-text-muted);
+}
+
+.message-input input:focus {
+    outline: none;
+}
+
+.input-buttons {
+    display: flex;
+    gap: 8px;
+}
+
+.message-input button {
+    background: none;
+    border: none;
+    color: var(--discord-text-muted);
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.message-input button:hover {
+    color: var(--discord-text);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Members List */
+.members-list {
+    width: 240px;
+    background-color: var(--discord-secondary);
+    padding: 16px;
+}
+
+.members-list h3 {
+    color: var(--discord-text-muted);
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.member {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.member:hover {
+    background-color: var(--discord-hover);
+}
+
+.member .avatar {
+    width: 32px;
+    height: 32px;
+}
+
+.member span {
+    font-size: 14px;
+}
+
+/* Icons (you'll need to add your own icon font or SVGs) */
+[class^="icon-"] {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--discord-tertiary);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #202225;
+}

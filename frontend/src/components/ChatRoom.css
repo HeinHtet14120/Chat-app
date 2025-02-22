@@ -1,0 +1,133 @@
+/* Chat Room Container */
+.chat-room {
+  background-color: #36393f; /* Discord dark background */
+  border-radius: 8px;
+  padding: 1.5rem;
+  color: #dcddde; /* Discord text color */
+}
+
+/* Chat List Container */
+.chat-list {
+  margin: 1rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items: flex-start;
+}
+
+/* Custom Scrollbar */
+.chat-list::-webkit-scrollbar {
+  width: 8px;
+}
+
+.chat-list::-webkit-scrollbar-thumb {
+  background-color: #202225; /* Discord scrollbar thumb */
+  border-radius: 4px;
+}
+
+.chat-list::-webkit-scrollbar-track {
+  background-color: #2f3136; /* Discord scrollbar track */
+}
+
+/* Chat Room Item */
+.chat-room-item {
+  width: 224px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0.75rem;
+  border-radius: 8px;
+  transition: background-color 0.2s ease;
+  background-color: #2f3136; /* Discord channel background */
+  cursor: pointer;
+  border: 2px solid #202225;
+}
+
+.chat-room-item:hover {
+  background-color: #40444b; /* Discord channel hover */
+}
+
+/* Chat Room Details */
+.chat-room-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-room-name {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffffff; /* Discord channel name color */
+}
+
+.chat-room-last-message {
+  font-size: 0.875rem;
+  color: #8e9297; /* Discord muted text color */
+  margin-top: 0.25rem;
+}
+
+/* Timestamp */
+.chat-room-timestamp {
+  font-size: 0.75rem;
+  color: #72767d; /* Discord timestamp color */
+  margin-top: 0.5rem;
+}
+
+.chat-room-icon {
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  color: #b9bbbe; /* Discord icon color */
+}
+
+/* Header Section */
+.header-section {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding: 0 1rem;
+  background-color: #2f3136; /* Discord header background */
+}
+
+.header-section button {
+  margin-top: 20px;
+  float: right;
+  background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: var(--discord-text);
+}
+
+.header-section h1 {
+  color: var(--discord-text);
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+/* Create Room Button */
+.create-room-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #5865f2; /* Discord blurple */
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.create-room-link:hover {
+  background-color: var(--discord-blurple); /* Darker Discord blurple */
+}
+
+/* Error Message */
+.bg-red-100 {
+  background-color: #f04747; /* Discord red */
+  border-color: #f04747;
+  color: #ffffff;
+}

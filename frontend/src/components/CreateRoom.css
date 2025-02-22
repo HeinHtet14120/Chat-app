@@ -1,0 +1,70 @@
+.create-room-container {
+    background-color: var(--discord-secondary);
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+.create-room-container h2 {
+    color: var(--discord-text);
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    color: var(--discord-text);
+    margin-bottom: 5px;
+}
+
+.form-group input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid var(--discord-separator);
+    background-color: var(--discord-input-bg);
+    color: var(--discord-text);
+    border-radius: 4px;
+}
+
+.users-list {
+    max-height: 200px;
+    overflow-y: auto;
+    background-color: var(--discord-input-bg);
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.user-checkbox {
+    display: block;
+    padding: 5px;
+    color: var(--discord-text);
+    cursor: pointer;
+}
+
+.user-checkbox:hover {
+    background-color: var(--discord-hover);
+}
+
+.user-checkbox input {
+    margin-right: 10px;
+}
+
+.create-button {
+    background-color: #5865F2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.create-button:hover {
+    background-color: #4752C4;
+}
+
