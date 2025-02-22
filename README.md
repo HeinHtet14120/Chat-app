@@ -134,7 +134,7 @@ Before you begin, ensure you have installed:
 3. **Start the Frontend Development Server**
    ```bash
    cd frontend
-   npm start
+   npm run dev
    ```
 
 4. **Access the Application**
